@@ -200,7 +200,7 @@ h1 {
 .cengagement {
   margin-top: 7rem;
   width: 100%;
-  margin-left: 2.4rem; }
+  margin-left: 2rem; }
 
 .communitygrid {
   display: grid;
@@ -252,8 +252,7 @@ h1 {
 
 .pictures {
   width: 30rem;
-  height: 23rem;
-  cursor: pointer; }
+  height: 23rem; }
 
 .buttonsw {
   margin-top: 1.6rem;
@@ -367,3 +366,88 @@ h1 {
   .fimages > *:hover {
     cursor: pointer;
     transform: translateY(-0.6rem) translateX(0.2rem); }
+
+.maincontainer {
+  width: 70%;
+  margin-left: 20rem;
+  margin-top: 6rem; }
+
+h1 {
+  color: #5ed900; }
+
+.smallh1 {
+  text-align: left;
+  margin-top: -2.5rem;
+  color: #111215;
+  margin-left: 0.4rem;
+  line-height: normal;
+  margin-bottom: 0.8rem; }
+
+.containertwo {
+  width: 60%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin-right: auto;
+  margin-left: auto;
+  justify-content: center;
+  column-gap: 1.5rem;
+  margin-top: 8rem; }
+  .containertwo > * {
+    display: grid;
+    grid-template-rows: min-content 1fr;
+    border: 4px solid #111215; }
+  .containertwo__images {
+    width: 290px;
+    height: 220px; }
+
+.heading4,
+.aboutproduct {
+  padding: 1rem; }
+
+.aboutproduct {
+  margin-top: -2rem;
+  width: 95%; }
+
+.container3 {
+  display: grid;
+  grid-template-rows: repeat(14, max-content);
+  row-gap: 2rem;
+  width: 80%;
+  margin-left: 17vw;
+  margin-top: 10rem; }
+
+.jaypara {
+  width: 80%; }
+
+.secondheading {
+  margin-left: -0.5rem;
+  margin-bottom: -1rem; }
+
+.heading4 {
+  margin-left: -1rem; }
+
+.cs1img {
+  width: 70rem;
+  height: 54rem;
+  margin-top: 1rem; }
+
+.casestudies {
+  width: 70%;
+  display: grid;
+  grid-template-columns: repeat(4, minmax(min-content, 1fr));
+  margin-right: auto;
+  margin-left: auto;
+  justify-content: center; }
+
+.logo {
+  width: min-content;
+  width: 12rem;
+  height: 11rem;
+  margin-top: 2rem; }
+
+.product2 {
+  margin-left: -1rem; }
+
+.secondheading2 {
+  margin-left: 10rem;
+  margin-bottom: -8rem; }

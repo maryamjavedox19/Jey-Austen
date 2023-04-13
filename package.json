@@ -5,8 +5,12 @@
   "main": "index.js",
   "scripts": {
     "compile:sass":"node-sass main.scss style.css -w",
-    "compile:sass-sw": "node-sass selectedWork/sw.scss selectedWork/sw.css -w"
-    
+    "compile:sass-sw": "node-sass selectedWork/sw.scss selectedWork/sw.css -w",
+    "compile:sass-cs1": "node-sass casestudies/casestudy1/style.scss casestudies/casestudy1/style.css -w",
+    "compile:sass-cs2": "node-sass casestudies/casestudy2/style.scss casestudies/casestudy2/style.css -w",
+    "compile:sass-cs3": "node-sass casestudies/casestudy3/style.scss casestudies/casestudy3/style.css -w",
+    "compile:sass-cs4": "node-sass casestudies/casestudy4/style.scss casestudies/casestudy4/style.css -w",
+    "compile:sass-resume": "node-sass resume/style.scss resume/style.css -w"
   },
   "author": "",
   "license": "ISC"
