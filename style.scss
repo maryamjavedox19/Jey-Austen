@@ -16,10 +16,14 @@
         line-height: 2;
         font-weight: 700;
         background-color: transparent;
+        color: #f2f7fc;
+        font-size: 1.8rem;
+        border: 3px solid #f2f7fc;;
     
         &:hover{
             cursor: pointer;
             background-color: #f2f7fc;
+            color: #111215;
     }
     } 
     
@@ -49,8 +53,7 @@
       font-weight: 300;
       line-height: 1.6;
       overflow-x: hidden;
-    
-    
+      color: #f2f7fc;
      }
     
      .header{
@@ -69,9 +72,9 @@
         :visited{
             text-decoration: none;
             font-size: 1.6rem;
-            color: white;
             text-align: center;
             margin-top: 1.2rem;
+            color: #f2f7fc;
         }
         }
 
@@ -80,12 +83,15 @@
         border: 4px solid #f2f7fc;
         border-radius: 2px;
         line-height: 1px; 
+        color: #f2f7fc;
        &:hover{
-        background-color: #111215;
+        background-color: #f2f7fc;
        }
-       
     }
-        
+    .border:hover a {
+        color: #042380;
+      }
+      
     .container{
         width: 60%;
         height: 30px;
@@ -101,14 +107,13 @@
     }
     
     .smallh1{
-        font-size: 5rem;
+        font-size: 6rem;
         color: #368ef3;
-        margin-top: 4rem;
+        margin-top: 7rem;
         margin-left: 1rem;
     }
     
     .aboutbrand{
-        color: #f2f7fc;
         font-size: 2.6rem;
         font-family: poppins;
     }
@@ -121,36 +126,37 @@
     
     .secondheading{
         @extend %font;
-        font-size: 5em;
-        margin-left: 3rem;
-        margin-bottom: -8rem;
+        font-size: 7em;
+        margin-left: 3.5rem;
+        margin-bottom: -13rem;
     }
     
     .butterfly{
-     width: 50rem;
-     height: 50rem;
+     width: 60rem;
+     height: 54rem;
      margin-top: -15rem;
      z-index: 40;
-     margin-left: 51rem ;
+     margin-left: 67rem;
     }
     
     .casestudies{
         display: grid;
         grid-template-columns: repeat(4, minmax(min-content, 1fr));
         width: 95%;
-        margin-left: 2.4rem;
-        column-gap: 1.2rem;
+        margin-left: auto;
+        margin-right: auto;
+        column-gap: 2rem;
         margin-top: -26rem;
         position: relative;
         z-index: 100;
     
         &>*{
             padding: 0.8rem;
-            border:4px solid #111215;
             background-color: #111215;
             display: grid;
-            grid-template-rows: 5rem 11rem 11rem;
+            grid-template-rows: repeat(2, 12rem) 17rem;
             row-gap: 5rem;
+            border: 4px solid #f2f7fc;
         }
     
         &>*:hover{
@@ -165,26 +171,28 @@
     
     .dividerfirst{
         margin-left: -1rem;
-        width: 108%;
+        width: 107%;
     }
     
     .heading4{
         font-family: Poppins, sans-serif;
-        font-size: 2rem;
+        font-size: 2.5rem;
         line-height: 1.3;
+        padding: 0.5rem;
     }
     
     .aboutproduct{
-        font-size: 1.5rem;
+        font-size: 2.1rem;
         line-height: 1.7;
-        margin-top: 6px;
+        margin-top: -4px;
         font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-        width: 80%; 
+        width: 90%; 
+        padding-left: 0.5rem;
     }
     
     .logo{
-        width:15rem;
-        height: 13rem;
+        width: 20rem;
+        height: 16rem;
         margin-left: 7rem;
     }
     
@@ -193,9 +201,10 @@
     .about-jey{
         width: 80%;
         margin-top: 22rem;
-        margin-left: 20rem;
+        margin-left: auto;
         display: grid;
         grid-template-columns: 30rem minmax(max-content, 1fr);
+        column-gap: 6rem;
         position: relative; 
     }
     
@@ -211,14 +220,14 @@
     
     .heading5{
         @extend %font;
-        font-size: 5rem;
+        font-size: 6.3rem;
         margin-bottom: 1rem;
     }
     
     .jaypara{
         width: 25%;
         font-family: Poppins, sans-serif;
-        font-size: 16px;
+        font-size: 1.7rem;
         line-height: 2;
         font-weight: 300;
     }
@@ -230,15 +239,21 @@
     
     .button{
         background-color: transparent;
-        padding: 1.1rem 12.5rem;
+        padding: 1.4rem 17rem;
         border-width: 4px;
         border-radius: 2px;
+        border-color: #f2f7fc;
+        color: #f2f7fc;
+        font-size: 1.6rem;
+        font-weight: 500;
     }
-    
+
     .button:hover{
         background-color: #f2f7fc;
         color: #111215;
-        cursor: pointer; 
+        cursor: pointer;
+        border-width: 1px; 
+
     }
     
     .jayimg{
@@ -249,17 +264,17 @@
     .stone{
         z-index: 1;
         position: absolute;
-        left: -13rem;
-        top: 20rem;
+        left: -19rem;
+        top: 25rem;
         }
         
     
     //------------------------- community engagement
     
     .cengagement{
-        margin-top: 7rem;
+        margin-top: 19rem;
         width: 100%;
-        margin-left: 2.4rem;
+        // margin-left: 2.4rem;
     }
     
     .communitygrid{
@@ -267,22 +282,20 @@
         grid-template-columns: repeat(3, minmax(min-content, 1fr));
         width: 90%;
         column-gap: 2rem;
-        margin-left: 3.3rem;
+        margin-left: auto;
+        margin-right: auto;
     }
-    
-    .para{
-        width: 24vw;
-        font-size: 1.4rem;
-        line-height: 2.5rem;
-        margin-top: 1rem;
+
+    .ceHeading{
+        margin-left: 7rem;
     }
-    
     
     .ce1{
         display: grid;
         grid-template-rows: min-content 1fr;
         @extend %gridborder;
         row-gap: 1.5rem;
+        border: 4px solid #f2f7fc;
     
         &:hover{
             @extend %borderhover
@@ -296,6 +309,8 @@
     
         &>*{
             @extend %gridborder;
+            border: 4px solid #f2f7fc;
+            padding-bottom: 2rem;
         }
     
         &>*:hover{
@@ -307,6 +322,7 @@
         display: grid;
         grid-template-rows: min-content 1fr;
         @extend %gridborder;
+        border: 4px solid #f2f7fc;
         &:hover{
             @extend %borderhover
         }
@@ -321,53 +337,66 @@
     //  -----------------SELECTED WORK
     .selectedwork{
         margin-top: 20rem;
-        width: 100%;
-        margin-left: 3rem;
     }
+
+    .swheading{
+        margin-left: 5rem;
+        margin-bottom: 0;
+    }
+
     
     .swgrid{
-        width: 90%;
+        width: 90vw;
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         column-gap: 1.5rem;
+        margin-right: auto;
+        margin-left: auto;
     
         &>*{
             @extend %gridborder;
             display: grid;
-            grid-template-rows: min-content, max-content;
+            grid-template-rows: min-content max-content;
             row-gap: 1rem;
             justify-content: center;
+            border: 4px solid #f2f7fc;
+            padding-bottom: 2rem;
         }
     }
     
     .pictures{
-        width: 30rem;
-        height: 23rem;
-        cursor: pointer;  
+        width: 100%;
+        height: 100%;
+        cursor: pointer; 
+        border-bottom: 4px solid #f2f7fc;
     }
     
     .buttonsw{
         margin-top: 1.6rem;
         background-color: transparent;
-        width: 91.4vw;
-        height: 4rem;
-        border-width: 4px;
+        width: 90vw;
+        height: 5rem;
         font-weight: 700;
+        color: inherit;
+        font-size: 1.6rem;
+        border: 4px solid white;
+        margin-left: 6rem;
     
         &:hover{
             cursor: pointer;
             background-color: #f2f7fc;
+            color: #111215;
         }
     }
     
     //---------------- get in touch
     .getintouch{
-        margin-top: 20rem;
+        margin-top: 29rem;
         width: 80vw;
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         column-gap: 10rem;
-        margin-left: 20rem; 
+        margin-left: auto;
     }
     
     .right{
@@ -375,7 +404,7 @@
     }
     
     .gitpara{
-        font-size: 1.4rem;
+        font-size: 1.7rem;
         line-height: 2;
         width: 29vw;
         font-family: Poppins, sans-serif;
@@ -390,19 +419,18 @@
        background-color: transparent;
        padding: 9px;
        outline: none;
-       font-size: 1.5rem;
-       border-bottom: 3px solid #cccccc;
+       font-size: 2rem;
+       border-bottom: 3px solid #f2f7fc;
     
        &:focus{
            outline: none;
-           border-color: #3898EC;
-           
+           border-color: #3898EC; 
        }
     }
     
     .text{
         overflow: scroll;
-        height: 9rem;
+        height: 10.5rem;
     }
     
     .name,
@@ -425,9 +453,10 @@
     }
     
     .mainimg{
-      width: 10rem;
+      width: 13rem;
       margin-top: -9rem;
       position: relative;
+      right: -9rem;
       animation-name: updown;
       animation-duration: 1s;
       animation-iteration-count: 1;
@@ -457,8 +486,8 @@
     
     .footerbutton{
         position: relative;
-        top: -8rem;
-        right: 10rem;
+        top: -12rem;
+        right: 4rem;
         @extend %buttonfeatures;
         background-color: black;
         padding: 15px 16px;
@@ -477,10 +506,10 @@
         display: flex;
     
      &>*{
-        width: 7rem;
-        height: 7.3rem;
+        width: 8.5rem;
+        height: 8.8rem;
         margin-right: 1rem;
-        border: 4px solid #111215;
+        border: 4px solid white;
         padding: 20px;
         margin-bottom: 10rem; 
     }
@@ -490,4 +519,8 @@
     transform: translateY(-0.6rem) translateX(0.2rem);
     }
     }
-    
+
+    .copyright{
+        font-size: 1.5rem;
+        margin-top: 3rem;
+    }

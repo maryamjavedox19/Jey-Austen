@@ -1,5 +1,27 @@
 @import "../style.scss";
 
+body{
+    background-color: #f2f7fc;
+    color: #111215;
+}
+
+.header{
+    :link, 
+    :visited{
+        color: #111215;
+    }
+}
+
+.border{
+    border: 4px solid black; 
+   &:hover{
+    background-color: black;
+   }
+}
+.border:hover a {
+    color: white;
+  }
+
 .showcase{
  width: 90vw;
  margin-left: 17rem;
@@ -11,8 +33,8 @@ h1{
 }
 
 .secondheading{
-  margin-left: 0;
-  margin-top: -1rem;
+  margin: 0;
+  margin-top: -4rem;
 }
 
 .smallheading{
@@ -51,20 +73,21 @@ h1{
 .midheading{
     padding: 1rem;
     font-family: Poppins, sans-serif;
-    font-size: 2rem;
+    font-size: 2.5rem;
     line-height: 1.3;
     font-weight: 400;
 }
 
 .smallestheading{
+    font-size: 1.5rem;
     padding-left: 1rem;
     font-style: italic;
-    font-weight: 700;
+    font-weight: 500;
 }
 
 .para{
-    padding-left: 1rem;
-    font-size: 1.3rem;
+    padding: 1rem;
+    font-size: 1.7rem;
 }
 
 .container2{
@@ -73,19 +96,21 @@ h1{
 }
 
 .casestudies{
-    width: 70%;
+    width: 85%;
     display: grid;
     grid-template-columns: repeat(4, minmax(min-content, 1fr));
     margin-right: auto;
     margin-left: auto;
     justify-content: center;
+    color: #f2f7fc;
+    &>*{
+        border: 4px solid black;
+    }
 }
 
 .logo{
-    width: min-content;
-    width: 12rem;
-    height: 11rem;
-    margin-top: 2rem;
+    width: 16rem;
+    height: 15rem;
 }
 
 .csmainheading{
@@ -94,7 +119,7 @@ h1{
 }
 
 .aboutproduct{
-    width: 17rem;
+    width: 22rem;
 }
 
 .butterfly{
@@ -107,6 +132,43 @@ top: -2.5rem;
 
 .casestudiesheading{
     font-family: Poppins, sans-serif;
-    font-size: 1.7rem;
-    
+    font-size: 2.3rem;
+    padding: 0.8rem;
 }
+
+    .name,
+    .email,
+    .text{
+       border-bottom: 3px solid black;
+    
+       &:focus{
+           outline: none;
+           border-color: #3898EC; 
+       }
+    }
+
+    .gitbutton{
+        color: #111215;
+        border-color: #111215;
+
+        &:hover{
+            color: white;
+            background-color: #111215;
+        }
+    }
+
+    .footerbutton{
+        background-color: white;
+        border: 4px solid black;
+        &:hover{
+            background-color: #111215;
+            color: white;
+        }
+    }
+
+    .fimages{
+     &>*{
+        border: 4px solid black;
+    }
+}
+    

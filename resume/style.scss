@@ -12,7 +12,7 @@
 
 .secondheading{
     margin: 0;
-    // margin-top: 1rem;
+
 }
 
 .downloadbutton{
@@ -21,19 +21,20 @@
     :visited{
         text-decoration: none;
         display: block;
-        width: 65vw;
-        height: 4rem;
+        width: 68vw;
+        height: 5rem;
         border-width: 1rem;
-        font-weight: 600;
+        font-weight: 500;
         border: 4px solid #f2f7fc;
         text-align: center;
-        padding-top: 0.8rem;
+        padding-top: 1rem;
         color: white;
-        font-size: 1.3rem;  
+        font-size: 1.5rem;  
        
         
         &:hover{
-        background-color: #111215; 
+        background-color: white;
+        color: black; 
         }
     }
 }
@@ -58,6 +59,6 @@
     list-style: none;
     font-size: 16px;
     &>*{
-        padding-top: 1.3rem;
+        padding-top: 1.5rem;
     }
 }
