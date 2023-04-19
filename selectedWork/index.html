@@ -18,11 +18,27 @@
                 <a href="#footer">get in touch</a>
             </div>
     </header>
+    
+    <div class="navigation">
+        <input type="checkbox" class="navigation__checkbox" id="navi-toggle">
+
+        <label for="navi-toggle" class="navigation__button">
+            <span class="navigation__icon">&nbsp;</span>
+        </label>
+
+        <nav class="navigation__nav">
+            <ul class="navigation__list">
+                <li class="navigation__item"><a href="#" class="navigation__link">Selected work</a></li>
+                <li class="navigation__item"><a href="#" class="navigation__link">Resume</a></li>
+                <li class="navigation__item"><a href="#" class="navigation__link">Get in touch</a></li>
+                </ul>
+        </nav>
+    </div>
 
    <!------------ showcase ---------------------->
     <div class="showcase">
-        <h1>Showcase</h1>
-        <h2 class="secondheading">
+        <h1 class="swheading1">Showcase</h1>
+        <h2 class="secondheading scsecheading">
             Samples of work througout the years
         </h2>
 
@@ -389,7 +405,7 @@
 
         <div class="rightfooter">
          <img class="mainimg" src="../images/knifeeblack.svg" alt="">
-         <a href="#toppage" class="footerbutton">Back to top ^</a>
+         <button onclick="location.href='#toppage'" class="footerbutton">Back to top^</button>
         </div>
 
       </footer>

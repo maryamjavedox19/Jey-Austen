@@ -13,7 +13,7 @@
 </head>
 <body>
     <header id="toppage" class="header">
-        <a href=""> Jey Austen</a>
+            <a href=""> Jey Austen</a>
             <a href="selectedWork/index.html">selected work</a>
             <a href="resume/index.html">resume</a>
             <div class="border">
@@ -21,15 +21,30 @@
             </div>
     </header>
 
+    <div class="navigation">
+        <input type="checkbox" class="navigation__checkbox" id="navi-toggle">
+
+        <label for="navi-toggle" class="navigation__button">
+            <span class="navigation__icon">&nbsp;</span>
+        </label>
+
+        <nav class="navigation__nav">
+            <ul class="navigation__list">
+                <li class="navigation__item"><a href="#" class="navigation__link">Selected work</a></li>
+                <li class="navigation__item"><a href="#" class="navigation__link">Resume</a></li>
+                <li class="navigation__item"><a href="#" class="navigation__link">Get in touch</a></li>
+                </ul>
+        </nav>
+    </div>
+
     <div class="container">
         <h1>Jey Austen <span class="smallh1">[they/them]</span></h1>
         <p class="aboutbrand">Brand and visual designer with a side of llustration, art direction, and product design</p>
     </div>
 
-
      <!-- -----------case studies------- -->
     <div class="container2">
-        <h2 class="secondheading">Case Studies</h2>
+        <h2 class="secondheading casestudiesresponsive">Case Studies</h2>
         <img class="butterfly" src="images/butterfly.svg" alt="">
     </div>
 
@@ -49,9 +64,7 @@
              <h4 class="heading4">With</h4>
              <p class="aboutproduct">A groupchat app meant to bring far apart friends closer together</p>
             </div>
-
         </div>
-
 
         <div onclick="location.href='casestudies/casestudy3/index.html'" class="cs2">
             <div class="part1">
@@ -115,7 +128,7 @@
      </div>
 
      <div class="jayinfo">
-        <h4 class="heading5">Who is Jey?</h4>
+        <h4 class="heading5 whoisjayheading">Who is Jey?</h4>
         <p class="jaypara">Jey Austen is a <span class="pinktext">senior brand designer</span> and <span class="pinktext">illustrator</span> from howdy and rowdy Austin, Texas.</p>
         <p class="jaypara">With 9 years of creative experience across multiple industries – athletics, entertainment, and fintech, for starters – Jey has seen some shit, and loves learning new things and thinking on their feet.
         </p>
@@ -130,14 +143,13 @@
 
    <div class="cengagement">
     <h5 class="heading5 ceHeading">Community Engagement</h5>
-    <div class="maincontainer">
- <div class="communitygrid">
+
+      <div class="communitygrid">
         <div onclick="location.href='https://friends.figma.com/events/details/figma-austin-presents-lunch-learn-feat-joy-cozby/'" class="ce1">
          <div class="img1">
-
-        <img src="images/circle.svg" alt="">
+        <img class="ceimage" src="images/circle.svg" alt="">
+        <hr class="divider">
          </div>
-       <hr class="divider">
          <div> 
             <h4 class="heading4">FoF Lunch and Learn</h4>
             <p class="aboutproduct">Figma for more than just rectangles? Learn about brand design, illustrating, and how to moodboard during this Lunch and Learn for the Friends of Figma Austin community</p> 
@@ -148,14 +160,14 @@
         <div class="ce2">
 
         <div onclick="location.href='https://podcasters.spotify.com/pod/show/bezier/episodes/Jey-Austen--Brand-Designer-e1e39jl'" >
-           <img src="images/audio2.svg" alt="">
+           <img class="ceimage" src="images/audio2.svg" alt="">
            <hr class="divider">
            <h4 class="heading4">Bezier</h4>
            <p class="aboutproduct">How to approach brand and visual design in an inclusive accessible way</p>
         </div>
 
         <div onclick="location.href='https://podcasters.spotify.com/pod/show/nameyourlayers/episodes/Episode-1-Jey-Austen-esbq5d'" >
-            <img src="images/audio2.svg" alt="">
+            <img class="ceimage" src="images/audio2.svg" alt="">
             <hr class="divider">
             <h4 class="heading4">Name your Layers</h5>
             <p class="aboutproduct">Learn about Jey's background and unique approach to brand desi</p>
@@ -163,10 +175,9 @@
 
         </div>
         
-
           <div onclick="location.href='https://www.tiktok.com/@jeycreates'" class="ce3">
             <div>
-                <img class="img3" src="images/circle.svg" alt="">
+                <img class="img3 ceimage" src="images/circle.svg" alt="">
                 <hr class="divider">
             </div>
    
@@ -253,7 +264,7 @@
 
       <footer id="footer" class="footer">
         <div class="leftfooter">
-            <h5 class="heading5">Follow Along</h5>
+            <h5 class="heading5 footerheading">Follow Along</h5>
             <div class="fimages">
              <img onclick="location.href='https://www.linkedin.com/in/jeyausten/'"  src="images/in.svg" alt="">
              <img onclick="location.href='https://www.instagram.com/JeyAusten/'" src="images/insta.svg" alt="">
@@ -265,7 +276,7 @@
 
         <div class="rightfooter">
          <img class="mainimg" src="images/transparentknife.svg" alt="">
-         <a href="#toppage" class="footerbutton">Back to top ^</a>
+         <button onclick="location.href='#toppage'" class="footerbutton">Back to top^</button>
         </div>
 
       </footer>

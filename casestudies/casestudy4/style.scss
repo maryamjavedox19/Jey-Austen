@@ -8,6 +8,47 @@ h1{
     margin-left: 1rem;
 }
 
+.heading4{
+    @media screen and(max-width:378px){
+        max-width: 30rem;
+    }
+}
+
+.container3{
+    margin-left: 16vw;
+    margin-top: 10rem;
+
+    @media screen and (max-width:800px){
+       margin-left: 14vh;
+    }
+
+    @media screen and (max-width:728px){
+        margin-left: 10vh;
+     }
+
+     @media screen and (max-width:500px){
+        margin-left: 4vh;
+      }
+}
+
+.jaypara2{
+    @media screen and (max-width:710px){
+      max-width:60%;
+    }
+
+    @media screen and (max-width:644px){
+        max-width:50%;
+      }
+
+      @media screen and (max-width:500px){
+        max-width:35%;
+      }
+
+      @media screen and (max-width:328px){
+        max-width:27%;
+      }
+}
+
 .getintouch,
 .footer
 {
@@ -15,33 +56,42 @@ h1{
     margin-left: 0;
 }
 
-
-.butterfly{
-    position: relative;
-    right: 21rem;
-    top: 2rem;
-}
-
-.secondheading2{
-   margin-left: -10.5rem;
-   position: relative;
-   top: 2rem;
-   
-}
-
-.jaypara{
+.jaypara2{
     width: 70%;
 }
 
-.cs4extraheading{
-    margin-left: 1px;
-}
+.secondheading2{
+    width: 100%;
+    display: grid;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
 
-.footerbutton{
-padding: 15px 5px;
-}
+    @media screen and (max-width:800px){
+     margin-left: -10rem;
+    }
 
+    @media screen and (max-width:530px){
+        font-size: 3rem;
+        margin-left: -19rem;
+       }
+}
 .casestudies{
     margin-right: 20rem;
     margin-left: -10rem;
+}
+
+.casestudies{
+    @media screen and (max-width:800px){
+        grid-template-columns: min-content;
+        margin-left: -13rem;
+    }
+
+    @media screen and (max-width:435px){
+        margin-left: -18rem;
+    }
+
+    @media screen and (max-width:365px){
+       margin-left: -23rem;
+    }
 }

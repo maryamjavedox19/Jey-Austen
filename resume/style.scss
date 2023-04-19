@@ -7,12 +7,31 @@
     width: 90vw;
     margin-left: auto;
     justify-content: center;
-
 }
 
 .secondheading{
     margin: 0;
+    @media screen and(max-width:900px){
+        font-size: 4rem;
+    }
 
+    @media screen and(max-width:421px){
+        font-size: 3rem;
+    }
+
+    @media screen and(max-width:325px){
+        font-size: 2.5rem;
+    }
+}
+
+.ce{
+    @media screen and(max-width:773px){
+        width: 4rem;
+    } 
+
+    @media screen and(max-width:540px){
+        width: 100%;
+    }
 }
 
 .downloadbutton{
@@ -29,29 +48,49 @@
         text-align: center;
         padding-top: 1rem;
         color: white;
-        font-size: 1.5rem;  
-       
-        
+        font-size: 1.5rem; 
+        @media screen and(max-width:1130px){
+            margin-left: auto;
+            margin-right: auto;
+        }
         &:hover{
         background-color: white;
         color: black; 
-        }
     }
+}
 }
 
 .aboutproduct{
-    width: 100%;
+    max-width: 80%;
     line-height: 2;
+
+    @media screen and(max-width:421px){
+        font-size: 1.8rem;
+    }
 }
 
 .heading4{
     font-size: 24px;
+    max-width: 80rem;
+    @media screen and(max-width:930px){
+        max-width: 70rem;
+    }
+    @media screen and(max-width:421px){
+        font-size: 1.7rem;
+    }
+    
 }
 
 .expertise{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     column-gap: 9rem;
+    @media screen and(max-width:540px){
+     grid-template-columns: max-content;
+     grid-auto-rows: max-content;
+     row-gap: 3rem;
+    }
+
 }
 
 .list{
@@ -61,4 +100,10 @@
     &>*{
         padding-top: 1.5rem;
     }
+}
+
+.footerbutton{
+    @media screen and (max-width:370px){
+        display: none;
+      }
 }

@@ -21,6 +21,23 @@
             </div>
     </header>
 
+    <div class="navigation">
+        <input type="checkbox" class="navigation__checkbox" id="navi-toggle">
+
+        <label for="navi-toggle" class="navigation__button">
+            <span class="navigation__icon">&nbsp;</span>
+        </label>
+
+        <nav class="navigation__nav">
+            <ul class="navigation__list">
+                <li class="navigation__item"><a href="#" class="navigation__link">Selected work</a></li>
+                <li class="navigation__item"><a href="#" class="navigation__link">Resume</a></li>
+                <li class="navigation__item"><a href="#" class="navigation__link">Get in touch</a></li>
+                </ul>
+        </nav>
+    </div>
+
+
     <div class="resumecontainer">
         <div class="downloadbutton">
             <a href="">Download a PDF</a>
@@ -108,7 +125,7 @@
 
             <!-- second column -->
             <div>
-                <h2 class="secondheading">
+                <h2 class="secondheading ce">
                     Core Expertise
                 </h2>
               <ul class="list">
@@ -167,7 +184,7 @@
 
         <div class="rightfooter">
          <img class="mainimg" src="../images/transparentknife.svg" alt="">
-         <a href="#toppage" class="footerbutton">Back to top ^</a>
+         <button onclick="location.href='#toppage'" class="footerbutton">Back to top^</button>
         </div>
 
       </footer>
